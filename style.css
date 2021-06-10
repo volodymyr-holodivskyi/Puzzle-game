@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    height: 30vh;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.timer{
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+}
+.content{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.puzzle{
+    width: 642px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 1px solid black;
+}
+.block{
+    width: 160px;
+    height: 160px;
+    background-image: url('puzzle.jpg');
+    background-position: center;
+}
+.start,.checkResult,.newGame{
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 10px;
+    color: brown;
+    border: 2px solid brown;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #fff;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.modal{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+    position: absolute;
+    display:none;
+    top: 30%;
+    left: 30%;
+    z-index: -1;
+}
+.modal-text{
+    width: 80%;
+    height: 60%;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalTimer{
+    width: 10%;
+    height: 60%;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeModal,.checkModal{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+.modal-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin: 0 auto;
+}
+.closeModal{
+    background-color: crimson;
+    
+}
+.checkModal{
+    background-color: darkgreen;
+}
+button:disabled{
+    opacity: 0.7;
+}
