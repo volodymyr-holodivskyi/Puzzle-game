@@ -1,0 +1,1 @@
+# This is simple Puzzle game designed with Jquerry UI lib.
